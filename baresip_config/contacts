@@ -1,0 +1,12 @@
+#
+# SIP contacts
+#
+# Displayname <sip:user@domain>;addr-params
+#
+#  addr-params:
+#    ;presence={none,p2p}
+#    ;access={allow,block}
+#
+
+
+"Music Server" <sip:music@iptel.org>

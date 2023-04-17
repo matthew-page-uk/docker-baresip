@@ -1,0 +1,16 @@
+version: "3.9"
+services:
+    mosquitto:
+        image: eclipse-mosquitto
+        network_mode: host
+
+    baresip:
+        image: baresip
+        command: baresip -f /baresip_config
+        tty: true
+        stdin_open: true
+        volumes:
+            - ./baresip_config:/baresip_config
+        network_mode: host
+        devices:
+            - /dev/snd
