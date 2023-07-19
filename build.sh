@@ -1,1 +1,1 @@
-docker build --platform linux/arm/v7 -t baresip .
+docker build --platform linux/arm -t baresip .
