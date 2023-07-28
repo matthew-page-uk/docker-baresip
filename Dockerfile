@@ -32,7 +32,7 @@ RUN git clone https://github.com/baresip/baresip.git && \
     cmake --install build --prefix dist && cp -a dist/* /usr/
 
 
-FROM ubuntu:20.04
+FROM bitnami/minideb:bullseye
 RUN apt update
 RUN apt install -y libopus0 ca-certificates openssl alsa-utils libasound2 libmosquitto1 libspandsp2
 RUN ldconfig
