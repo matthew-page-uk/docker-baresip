@@ -1,1 +1,1 @@
-docker build --platform linux/arm -t baresip .
+docker build -t baresip .
